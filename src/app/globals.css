@@ -18,9 +18,13 @@
     --foreground: #ededed;
   }
 }
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #171717;
+  background: #fff;
+}
+
+@media (width >= 80rem) {
+  .container {
+    max-width: 80rem !important;
+  }
 }
