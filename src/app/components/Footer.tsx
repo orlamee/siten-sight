@@ -1,18 +1,19 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-import { FaArrowUp } from "react-icons/fa6";
+import Image from 'next/image';
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaArrowUp } from 'react-icons/fa6';
+import ThemeToggle from './ThemeToggle';
 
 export default function Footer() {
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <div>
       <div className="container mx-auto px-4 py-6">
-        <div className="bg-white p-20 rounded-4xl text-center shadow-2xl">
+        <div className="p-20 rounded-4xl text-center shadow-2xl">
           <Image
             src="/images/ss.png"
             alt="Business Thrve"
@@ -20,7 +21,7 @@ export default function Footer() {
             height={50}
             className="mx-auto mb-4"
           />
-          <p className="text-xs text-black mb-10 max-w-xl mx-auto">
+          <p className="text-xs mb-10 max-w-xl mx-auto">
             SitenSight is a modern application built for students,
             professionals, and industry guests in the construction and education
             space.
@@ -29,7 +30,7 @@ export default function Footer() {
           <hr className="border-[#d17432] my-6" />
 
           <div className="flex justify-between items-center mt-10 flex-col md:flex-row gap-4">
-            <p className="text-xs text-black">
+            <p className="text-xs">
               &copy; {new Date().getFullYear()} SitenSight. All rights reserved.
             </p>
             <div className="flex gap-4 text-white">
@@ -58,6 +59,13 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      
+      {/* Fixed Theme Toggle button on the left */}
+      <div className="fixed bottom-6 left-6 z-50">
+        <ThemeToggle /> 
+      </div>
+
+      {/* Scroll to top button */}
       <button
         onClick={handleScrollToTop}
         className="fixed bottom-6 right-6 z-50 bg-[#d17432] text-white p-3 rounded-full shadow-md hover:bg-[#bd5f23] transition cursor-pointer"
