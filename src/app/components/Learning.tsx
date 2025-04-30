@@ -36,7 +36,7 @@ export default function Learning() {
                 </div>
                 <div>
                   <h4 className="text-base font-semibold mb-1">{item.title}</h4>
-                  <p className="text-xs text-gray-700">{item.description}</p>
+                  <p className="text-xs">{item.description}</p>
                 </div>
               </div>
             </div>

@@ -18,9 +18,15 @@
     --foreground: #ededed;
   }
 }
-body {
-  color: #171717;
-  background: #fff;
+
+body.dark {
+  background-color: #000;
+  color: white;
+}
+
+body.light {
+  background-color: white;
+  color: black;
 }
 
 @media (width >= 80rem) {

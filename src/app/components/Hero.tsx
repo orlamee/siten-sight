@@ -68,7 +68,7 @@ export default function Hero() {
               Your Hub for Construction{" "}
               <span className="text-[#d17432]">Learning and Collaboration</span>
             </h3>
-            <p className="text-[#333] text-[12px] md:text-[12px] font-[500] leading-[24px] md:leading-[30px]">
+            <p className="text-[12px] md:text-[12px] font-[500] leading-[24px] md:leading-[30px]">
               SitenSight is a modern application built for students,
               professionals, and industry guests in the construction and
               education space. The app provides access to curated knowledge,
@@ -103,15 +103,15 @@ export default function Hero() {
           <div className="bg-white rounded-lg p-6 max-w-md w-full">
             {!isSubmitted ? (
               <>
-                <h3 className="text-xl font-bold mb-4">Get Early Access</h3>
-                <p className="mb-4 text-xs">
+                <h3 className="text-xl font-bold text-black mb-4">Get Early Access</h3>
+                <p className="mb-4 text-xs text-black">
                   Enter your details to join the waitlist.
                 </p>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-4">
                     <label
                       htmlFor="name"
-                      className="block mb-2 text-xs font-medium"
+                      className="block mb-2 text-xs font-medium text-black"
                     >
                       Name
                     </label>
@@ -128,7 +128,7 @@ export default function Hero() {
                   <div className="mb-6">
                     <label
                       htmlFor="email"
-                      className="block mb-2 text-xs font-medium"
+                      className="block mb-2 text-xs font-medium text-black"
                     >
                       Email
                     </label>

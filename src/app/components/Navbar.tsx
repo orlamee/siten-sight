@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-white">
+    <nav className="w-full">
       <div className="container mx-auto flex items-center justify-between px-4 py-6">
         <Link href="/">
           <Image
