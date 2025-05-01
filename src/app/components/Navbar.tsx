@@ -9,7 +9,7 @@ export default function Navbar() {
           <Image
             src="/images/fav.png"
             alt="Business Thrve"
-            width={150}
+            width={100}
             height={50}
           />
         </Link>
