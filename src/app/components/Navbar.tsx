@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between px-4 py-6">
         <Link href="/">
           <Image
-            src="/images/ss.png"
+            src="/images/fav.png"
             alt="Business Thrve"
             width={150}
             height={50}

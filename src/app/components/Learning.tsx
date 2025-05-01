@@ -44,7 +44,7 @@ export default function Learning() {
         </div>
         <div className="w-full md:w-1/3 relative aspect-square">
           <Image
-            src="/images/hero.svg"
+            src="/images/learning.png"
             alt="Hero"
             fill
             className="object-contain"
