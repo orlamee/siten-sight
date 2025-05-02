@@ -13,7 +13,7 @@ export default function ScanFeature() {
       <div className="container mx-auto px-6 md:px-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <div className="lg:order-2 lg:w-1/2">
-            <div className="relative aspect-square max-w-md mx-auto">
+            <div className="relative w-full aspect-square max-w-md mx-auto min-h-[300px]">
               <Image
                 src="/images/scan.png"
                 alt="SiteLens mobile app scanning interface"
