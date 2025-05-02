@@ -21,7 +21,7 @@ export default function Footer() {
             height={50}
             className="mx-auto mb-4"
           />
-          <p className="text-xs mb-10 max-w-xl mx-auto">
+          <p className="text-xs mb-10 max-w-xl mx-auto font-[500]">
             SitenSight is a modern application built for students,
             professionals, and industry guests in the construction and education
             space.

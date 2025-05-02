@@ -65,15 +65,13 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center">
           <div className="flex-1 basis-full md:basis-1/2 text-center md:text-left">
             <h3 className="capitalize text-2xl md:text-[35px] leading-[30px] md:leading-[50px] font-bold mb-4 md:mb-6">
-              Your Hub for Construction{" "}
-              <span className="text-[#d17432]">Learning and Collaboration</span>
+              Where Construction Minds{" "}
+              <span className="text-[#d17432]">Learn, Build, and Connect</span>
             </h3>
             <p className="text-[12px] md:text-[12px] font-[500] leading-[24px] md:leading-[30px]">
-              SitenSight is a modern application built for students,
-              professionals, and industry guests in the construction and
-              education space. The app provides access to curated knowledge,
-              structured learning modules, a collaborative community forum, and
-              progress tracking through personalized profiles.
+              Built for students, professionals, and enthusiasts in
+              construction. Learn real-world skills, explore interactive
+              lessons, and connect with a vibrant community—anytime, anywhere.
             </p>
             <div className="mt-6 md:mt-10">
               <button
@@ -87,7 +85,7 @@ export default function Hero() {
           <div className="flex-1 basis-full md:basis-1/2">
             <div className="relative w-full h-0 pb-[100%]">
               <Image
-                src="/images/cf.png"
+                src="/images/learning.png"
                 alt="Hero"
                 fill
                 className="object-contain"
@@ -103,7 +101,9 @@ export default function Hero() {
           <div className="bg-white rounded-lg p-6 max-w-md w-full">
             {!isSubmitted ? (
               <>
-                <h3 className="text-xl font-bold text-black mb-4">Get Early Access</h3>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Get Early Access
+                </h3>
                 <p className="mb-4 text-xs text-black">
                   Enter your details to join the waitlist.
                 </p>

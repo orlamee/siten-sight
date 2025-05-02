@@ -1,32 +1,43 @@
-import { AcademicCapIcon } from "@heroicons/react/24/outline";
+import {
+  ChatBubbleLeftRightIcon,
+  UserGroupIcon,
+  CalendarDaysIcon,
+  ShieldCheckIcon,
+} from "@heroicons/react/24/outline";
 import Image from "next/image";
 
-const CommunityItems = [
+const communityItems = [
   {
-    title: "Lorem ipsum",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit",
-    icon: AcademicCapIcon,
+    title: "Topic-Based Rooms",
+    description: "Join active conversations across various construction themes.",
+    icon: ChatBubbleLeftRightIcon,
   },
   {
-    title: "Dolor sit amet",
-    description: "Consectetur adipisicing elit, sed do eiusmod tempor",
-    icon: AcademicCapIcon,
+    title: "Mentorship Matching",
+    description: "Connect with industry pros for guidance and support.",
+    icon: UserGroupIcon,
   },
   {
-    title: "Adipisicing elit",
-    description: "Ut enim ad minim veniam, quis nostrud exercitation",
-    icon: AcademicCapIcon,
+    title: "Events & Webinars",
+    description: "Attend live sessions, expert talks, and workshops.",
+    icon: CalendarDaysIcon,
+  },
+  {
+    title: "Moderated & Safe",
+    description:
+      "Clear community guidelines to keep conversations respectful and productive.",
+    icon: ShieldCheckIcon,
   },
 ];
 
 export default function Community() {
   return (
-    <section className="container mx-auto px-6 md:px-10 mt-20">
+    <section className="container mx-auto px-6 md:px-10 py-20">
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="w-full md:w-1/3 relative aspect-square">
           <Image
             src="/images/cf.png"
-            alt="Hero"
+            alt="Community Forum"
             fill
             className="object-contain"
             priority
@@ -34,18 +45,18 @@ export default function Community() {
         </div>
         <div className="w-full md:w-2/3">
           <h2 className="text-3xl font-bold mb-6">Community Forum</h2>
-          {CommunityItems.map((item, index) => (
+          {communityItems.map((item, index) => (
             <div
               key={index}
-              className="p-3 border border-gray-400 rounded-lg mb-4 shadow-md"
+              className="p-4 border border-gray-300 rounded-lg mb-4 shadow-sm transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="flex flex-row items-start gap-4">
-                <div className="bg-gray-100 p-3 rounded-full">
-                  <item.icon className="h-6 w-6 text-gray-600" />
+              <div className="flex items-start gap-4">
+                <div className="bg-blue-50 p-3 rounded-full">
+                  <item.icon className="h-6 w-6 text-[#d17432]" />
                 </div>
                 <div>
-                  <h4 className="text-base font-semibold mb-1">{item.title}</h4>
-                  <p className="text-xs">{item.description}</p>
+                  <h4 className="text-lg font-bold">{item.title}</h4>
+                  <p className="text-[13px] font-[500]">{item.description}</p>
                 </div>
               </div>
             </div>

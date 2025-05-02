@@ -9,8 +9,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Siten Sight',
-  description: 'A site for all your needs',
+  title: 'Siten Sight | Where Construction Minds Learn, Build, and Connect',
+  description: 'Where Construction Minds Learn, Build, and Connect',
 };
 
 export default function RootLayout({
