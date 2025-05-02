@@ -1,56 +1,84 @@
-import { AcademicCapIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
+import {
+  BookOpenIcon,
+  LightBulbIcon,
+  FilmIcon,
+  DocumentTextIcon,
+} from "@heroicons/react/24/outline";
 
 const knowledgeItems = [
   {
-    title: "Lorem ipsum",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit",
-    icon: AcademicCapIcon,
+    title: "Construction Dictionary",
+    description:
+      "Clear definitions for technical terms and field-specific jargon.",
+    icon: BookOpenIcon,
   },
   {
-    title: "Dolor sit amet",
-    description: "Consectetur adipisicing elit, sed do eiusmod tempor",
-    icon: AcademicCapIcon,
+    title: "Real-World Lessons Learned",
+    description:
+      "Insights and case studies drawn from actual field experience.",
+    icon: LightBulbIcon,
   },
   {
-    title: "Adipisicing elit",
-    description: "Ut enim ad minim veniam, quis nostrud exercitation",
-    icon: AcademicCapIcon,
+    title: "Tutorials from Pros",
+    description: "Step-by-step guides and expert walkthroughs you can trust.",
+    icon: FilmIcon,
+  },
+  {
+    title: "Expert Articles",
+    description:
+      "Dive into real-world guidance and how-tos written by industry professionals.",
+    icon: DocumentTextIcon,
   },
 ];
 
 export default function Knowledge() {
   return (
-    <section className="container mx-auto px-6 md:px-10 mt-20">
-      <div className="flex flex-col md:flex-row items-center gap-8">
-        <div className="w-full md:w-1/3 relative aspect-square">
-          <Image
-            src="/images/cff.png"
-            alt="Hero"
-            fill
-            className="object-contain"
-            priority
-          />
-        </div>
-        <div className="w-full md:w-2/3">
-          <h2 className="text-3xl font-bold mb-6">Knowledge Sharing</h2>
-          {knowledgeItems.map((item, index) => (
-            <div
-              key={index}
-              className="p-3 border border-gray-400 rounded-lg mb-4 shadow-md"
-            >
-              <div className="flex flex-row items-start gap-4">
-                <div className="bg-gray-100 p-3 rounded-full">
-                  <item.icon className="h-6 w-6 text-gray-600" />
-                </div>
-                <div>
-                  <h4 className="text-base font-semibold mb-1">{item.title}</h4>
-                  <p className="text-xs">{item.description}</p>
-                </div>
+    <section className="container mx-auto px-6 md:px-10 py-16">
+      <div className="text-center mb-16">
+        <span className="text-[#d17432] font-semibold tracking-wide">
+          Knowledge Sharing
+        </span>
+        <h2 className="text-4xl font-bold mt-2 mb-4">
+          Knowledge That Builds More Than Skills
+        </h2>
+        <div className="w-24 h-1 bg-[#d17432] mx-auto"></div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {knowledgeItems.map((item, index) => (
+          <div
+            key={index}
+            className="group p-7 rounded-xl border border-gray-200 hover:border-blue-300 transition-all duration-300 hover:-translate-y-2"
+          >
+            <div className="flex flex-col">
+              <div className="bg-blue-50 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-6 group-hover:bg-blue-100 transition">
+                <item.icon className="h-6 w-6 text-[#d17432]" />
               </div>
+              <h3 className="text-lg font-bold mb-3">{item.title}</h3>
+              <p className="text-[13px] font-[500]">{item.description}</p>
+              <a
+                href="#"
+                className="mt-6 text-[#d17432] font-medium flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs"
+              >
+                Learn more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 ml-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
