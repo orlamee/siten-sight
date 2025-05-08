@@ -24,9 +24,9 @@ const knowledgeItems = [
     icon: FilmIcon,
   },
   {
-    title: "Expert Articles",
+    title: "Curated Content",
     description:
-      "Dive into real-world guidance and how-tos written by industry professionals.",
+      "Discover industry-specific tips and insights curated to help construction professionals tackle real-world challenges with practical strategies and tools.",
     icon: DocumentTextIcon,
   },
 ];

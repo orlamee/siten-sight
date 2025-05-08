@@ -38,7 +38,7 @@ export default function Learning() {
             Learning Modules
           </span>
           <h2 className="text-4xl text-black font-bold mt-2 mb-4">
-            Courses That Fit Your Journey
+          AI Recommended Courses That Fit Your Journey
           </h2>
           <div className="w-24 h-1 bg-[#d17432] mx-auto"></div>
         </div>

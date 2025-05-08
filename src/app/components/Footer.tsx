@@ -22,7 +22,7 @@ export default function Footer() {
             className="mx-auto mb-4"
           />
           <p className="text-xs mb-10 max-w-xl mx-auto font-[500]">
-            SitenSight is a modern application built for students,
+            SiteNSight is a modern application built for students,
             professionals, and industry guests in the construction and education
             space.
           </p>
@@ -31,7 +31,7 @@ export default function Footer() {
 
           <div className="flex justify-between items-center mt-10 flex-col md:flex-row gap-4">
             <p className="text-xs">
-              &copy; {new Date().getFullYear()} SitenSight. All rights reserved.
+              &copy; {new Date().getFullYear()} SiteNSight. All rights reserved.
             </p>
             <div className="flex gap-4 text-white">
               <a
