@@ -19,7 +19,7 @@ const communityItems = [
   },
   {
     title: "Events & Webinars",
-    description: "Attend live sessions, expert talks, and workshops.",
+    description: "Get updates on construction events/workshops.",
     icon: CalendarDaysIcon,
   },
   {

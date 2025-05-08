@@ -15,7 +15,7 @@ export default function ScanFeature() {
           <div className="lg:order-2 lg:w-1/2">
             <div className="relative w-full aspect-square max-w-md mx-auto min-h-[300px]">
               <Image
-                src="/images/scan.png"
+                src="/images/Scanning.png"
                 alt="SiteLens mobile app scanning interface"
                 fill
                 className="object-contain"
@@ -31,7 +31,7 @@ export default function ScanFeature() {
             <div className="max-w-2xl">
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium shadow-sm mb-5 border border-gray-200">
                 <QrCodeIcon className="h-5 w-5 text-orange-500 mr-2" />
-                SiteLens Technology
+                SiteLens Technology by SiteNsight
               </span>
 
               <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
@@ -39,9 +39,10 @@ export default function ScanFeature() {
               </h2>
 
               <p className="text-sm font-[500] mb-10">
-                Turn your phone into a smart scanner. SiteLens instantly
-                identifies tools, buildings, or materials—and unlocks specs,
-                safety tips, and learning content in real time.
+                Remove that on-site unclarity by turning your phone into a smart
+                scanner. SiteLens instantly identifies tools, buildings, or
+                materials and unlocks how-to’s, specs, safety tips, and learning
+                content in real time.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-6 mb-12">
@@ -100,7 +101,7 @@ export default function ScanFeature() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="px-6 py-3.5 bg-[#d17432] text-white rounded-full font-medium hover:bg-[#6b615b] transition-all shadow-md hover:shadow-lg flex items-center justify-center">
                   <QrCodeIcon className="h-5 w-5 mr-2" />
-                  Download SiteLens App
+                  Download SiteNsight App
                 </button>
               </div>
             </div>

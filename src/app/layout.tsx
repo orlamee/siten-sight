@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Siten Sight | Where Construction Minds Learn, Build, and Connect',
+  title: 'SiteNSight | Where Construction Minds Learn, Build, and Connect',
   description: 'Where Construction Minds Learn, Build, and Connect',
 };
 
