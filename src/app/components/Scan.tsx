@@ -12,7 +12,7 @@ export default function ScanFeature() {
     <section className="py-20">
       <div className="container mx-auto px-6 md:px-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="lg:order-2 lg:w-1/2">
+          <div className="lg:order-1 lg:w-1/2">
             <div className="relative w-full aspect-square max-w-md mx-auto min-h-[300px]">
               <Image
                 src="/images/Scanning.png"
@@ -27,7 +27,7 @@ export default function ScanFeature() {
           </div>
 
           {/* Content Section */}
-          <div className="lg:order-1 lg:w-1/2">
+          <div className="lg:order-2 lg:w-1/2">
             <div className="max-w-2xl">
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium shadow-sm mb-5 border border-gray-200">
                 <QrCodeIcon className="h-5 w-5 text-orange-500 mr-2" />
