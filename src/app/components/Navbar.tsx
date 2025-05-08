@@ -3,14 +3,14 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="w-full">
-      <div className="container mx-auto flex items-center justify-between px-4 py-6">
+    <nav className="sticky top-0 z-50 bg-white shadow-md border-b border-gray-200">
+      <div className="container mx-auto flex items-center justify-between px-4 py-2">
         <Link href="/">
           <Image
             src="/images/fav.png"
             alt="Business Thrve"
-            width={100}
-            height={50}
+            width={80}
+            height={40}
           />
         </Link>
         <div>

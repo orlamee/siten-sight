@@ -11,10 +11,10 @@ export default function Home() {
     <div>
       <Navbar />
       <Hero />
-      <Knowledge/>
+      <ScanFeature/>
       <Learning/>
       <Community/>
-      <ScanFeature/>
+      <Knowledge/>
       <Footer/>
     </div>
   );
