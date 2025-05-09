@@ -44,7 +44,7 @@ export default function Community() {
           />
         </div>
         <div className="w-full md:w-2/3">
-          <h2 className="text-3xl font-bold mb-6">Community Forum</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center lg:text-left">Community Forum</h2>
           {communityItems.map((item, index) => (
             <div
               key={index}

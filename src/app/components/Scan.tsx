@@ -11,7 +11,7 @@ export default function ScanFeature() {
   return (
     <section className="py-20">
       <div className="container mx-auto px-6 md:px-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
           <div className="lg:order-1 lg:w-1/2">
             <div className="relative w-full aspect-square max-w-md mx-auto min-h-[300px]">
               <Image
@@ -29,16 +29,17 @@ export default function ScanFeature() {
           {/* Content Section */}
           <div className="lg:order-2 lg:w-1/2">
             <div className="max-w-2xl">
-              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium shadow-sm mb-5 border border-gray-200">
-                <QrCodeIcon className="h-5 w-5 text-orange-500 mr-2" />
-                SiteLens Technology by SiteNsight
-              </span>
+              <div className="flex justify-center lg:justify-start">
+                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium shadow-sm mb-5 border border-gray-200">
+                  <QrCodeIcon className="h-5 w-5 text-orange-500 mr-2" />
+                  SiteLens Technology by SiteNsight
+                </span>
+              </div>
 
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight text-center lg:text-left">
                 Learn Through Your Lens
               </h2>
-
-              <p className="text-sm font-[500] mb-10">
+              <p className="text-sm font-[500] mb-10 text-center lg:text-left">
                 Remove that on-site unclarity by turning your phone into a smart
                 scanner. SiteLens instantly identifies tools, buildings, or
                 materials and unlocks how-to’s, specs, safety tips, and learning
