@@ -9,7 +9,8 @@ import Image from "next/image";
 const communityItems = [
   {
     title: "Topic-Based Rooms",
-    description: "Join active conversations across various construction themes.",
+    description:
+      "Join active conversations across various construction themes.",
     icon: ChatBubbleLeftRightIcon,
   },
   {
@@ -44,7 +45,14 @@ export default function Community() {
           />
         </div>
         <div className="w-full md:w-2/3">
-          <h2 className="text-3xl font-bold mb-6 text-center lg:text-left">Community Forum</h2>
+          <div className="mb-4">
+            <span className="text-sm inline-block bg-yellow-100 text-yellow-800 px-4 py-1 rounded-full font-semibold">
+              🚧 Coming Soon
+            </span>
+          </div>
+          <h2 className="text-3xl font-bold mb-6 text-center lg:text-left">
+            Community Forum
+          </h2>
           {communityItems.map((item, index) => (
             <div
               key={index}

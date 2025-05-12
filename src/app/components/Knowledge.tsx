@@ -34,6 +34,11 @@ const knowledgeItems = [
 export default function Knowledge() {
   return (
     <section className="container mx-auto px-6 md:px-10 py-16">
+      <div className="text-center mb-4">
+        <span className="text-sm inline-block bg-yellow-100 text-yellow-800 px-4 py-1 rounded-full font-semibold">
+          🚧 Coming Soon
+        </span>
+      </div>
       <div className="text-center mb-16">
         <span className="text-[#d17432] font-semibold tracking-wide">
           Knowledge Sharing
