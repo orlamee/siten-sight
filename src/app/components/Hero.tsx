@@ -83,7 +83,7 @@ export default function Hero() {
           <div className="flex-1 basis-full md:basis-1/2">
             <div className="relative w-full h-0 pb-[100%]">
               <Image
-                src="/images/home.png"
+                src="/images/homee.png"
                 alt="Hero"
                 fill
                 className="object-contain"
