@@ -31,13 +31,13 @@ const learningItems = [
 
 export default function Learning() {
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="py-20">
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-16">
           <span className="text-[#d17432] font-semibold tracking-wide">
             Learning Modules
           </span>
-          <h2 className="text-4xl text-black font-bold mt-2 mb-4">
+          <h2 className="text-4xl font-bold mt-2 mb-4">
           AI Recommended Courses That Fit Your Journey
           </h2>
           <div className="w-24 h-1 bg-[#d17432] mx-auto"></div>
@@ -53,10 +53,10 @@ export default function Learning() {
                 <div className="bg-blue-50 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-6 group-hover:bg-blue-100 transition">
                   <item.icon className="h-6 w-6 text-[#d17432]" />
                 </div>
-                <h3 className="text-black text-lg font-bold mb-3">
+                <h3 className="text-lg font-bold mb-3">
                   {item.title}
                 </h3>
-                <p className="text-[13px] mb-6 text-black font-[500]">
+                <p className="text-[13px] mb-6 font-[500]">
                   {item.description}
                 </p>
                 <a
