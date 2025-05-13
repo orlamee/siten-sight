@@ -12,7 +12,7 @@ export default function ScanFeature() {
     <section className="py-20">
       <div className="container mx-auto px-6 md:px-10">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="lg:order-1 lg:w-1/2">
+          <div className="lg:order-1 lg:w-1/2 lg:block hidden">
             <div className="relative w-full aspect-square max-w-md mx-auto min-h-[300px]">
               <Image
                 src="/images/Scanning.png"
@@ -45,7 +45,19 @@ export default function ScanFeature() {
                 materials and unlocks how-to’s, specs, safety tips, and learning
                 content in real time.
               </p>
-
+              <div className="lg:order-1 lg:w-1/2 block lg:hidden">
+                <div className="relative w-full aspect-square max-w-md mx-auto min-h-[300px]">
+                  <Image
+                    src="/images/Scanning.png"
+                    alt="SiteLens mobile app scanning interface"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                  <div className="absolute -top-6 -left-6 w-28 h-28 bg-orange-100 rounded-full opacity-30 -z-10"></div>
+                  <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-100 rounded-full opacity-30 -z-10"></div>
+                </div>
+              </div>
               <div className="grid sm:grid-cols-2 gap-6 mb-12">
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-50 p-3 rounded-full flex-shrink-0">
