@@ -27,7 +27,7 @@ export default function Footer() {
             space.
           </p>
 
-          <hr className="border-[#d17432] my-6" />
+          <hr className="border-[#c3590e] my-6" />
 
           <div className="flex justify-between items-center mt-10 flex-col md:flex-row gap-4">
             <p className="text-xs">
@@ -68,7 +68,7 @@ export default function Footer() {
       {/* Scroll to top button */}
       <button
         onClick={handleScrollToTop}
-        className="fixed bottom-6 right-6 z-50 bg-[#d17432] text-white p-3 rounded-full shadow-md hover:bg-[#bd5f23] transition cursor-pointer"
+        className="fixed bottom-6 right-6 z-50 bg-[#c3590e] text-white p-3 rounded-full shadow-md hover:bg-[#bd5f23] transition cursor-pointer"
         aria-label="Back to top"
       >
         <FaArrowUp size={16} />

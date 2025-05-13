@@ -16,7 +16,7 @@ export default function Navbar() {
         <div>
           <a
             href="#"
-            className="bg-[#d17432] text-white px-6 py-4 rounded-[36px] text-sm font-medium hover:bg-[#6b615b] transition-all"
+            className="bg-[#c3590e] text-white px-6 py-4 rounded-[36px] text-sm font-medium hover:bg-[#6b615b] transition-all"
           >
             Download App
           </a>

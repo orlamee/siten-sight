@@ -65,9 +65,16 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center">
           {/* Text Content */}
           <div className="flex-1 basis-full md:basis-1/2 text-center md:text-left">
+            <Image
+              src="/images/ss.png"
+              alt="Business Thrve"
+              width={150}
+              height={50}
+              className="ml-[-15px] mb-4"
+            />
             <h3 className="capitalize text-2xl md:text-[35px] leading-[30px] md:leading-[50px] font-bold mb-4 md:mb-6">
               Where Curious Minds{" "}
-              <span className="text-[#d17432]">Learn, Build, and Connect</span>
+              <span className="text-[#c3590e]">Learn, Build, and Connect</span>
             </h3>
             <p className="text-[12px] md:text-[12px] font-[500] leading-[24px] md:leading-[30px]">
               Built for students, professionals, and DIY users in construction.
@@ -77,7 +84,7 @@ export default function Hero() {
             <div className="mt-6 md:mt-10">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="bg-[#d17432] text-white px-6 py-4 rounded-[36px] text-sm font-medium hover:bg-[#6b615b] transition-all cursor-pointer"
+                className="bg-[#c3590e] text-white px-6 py-4 rounded-[36px] text-sm font-medium hover:bg-[#6b615b] transition-all cursor-pointer"
               >
                 Join Waitlist
               </button>
@@ -158,7 +165,7 @@ export default function Hero() {
                     </button>
                     <button
                       type="submit"
-                      className="px-4 py-2 text-sm font-medium text-white bg-[#d17432] rounded-[36px] hover:bg-[#6b615b] flex items-center justify-center"
+                      className="px-4 py-2 text-sm font-medium text-white bg-[#c3590e] rounded-[36px] hover:bg-[#6b615b] flex items-center justify-center"
                       disabled={isLoading}
                     >
                       {isLoading ? (
@@ -194,7 +201,7 @@ export default function Hero() {
               </>
             ) : (
               <div className="text-center py-4">
-                <h3 className="text-xl font-bold mb-2 text-[#d17432]">
+                <h3 className="text-xl font-bold mb-2 text-[#c3590e]">
                   Thank You!
                 </h3>
                 <p>

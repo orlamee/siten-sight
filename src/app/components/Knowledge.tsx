@@ -40,13 +40,13 @@ export default function Knowledge() {
         </span>
       </div>
       <div className="text-center mb-16">
-        <span className="text-[#d17432] font-semibold tracking-wide">
+        <span className="text-[#c3590e] font-semibold tracking-wide">
           Knowledge Sharing
         </span>
         <h2 className="text-4xl font-bold mt-2 mb-4">
           Knowledge That Builds More Than Skills
         </h2>
-        <div className="w-24 h-1 bg-[#d17432] mx-auto"></div>
+        <div className="w-24 h-1 bg-[#c3590e] mx-auto"></div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -57,13 +57,13 @@ export default function Knowledge() {
           >
             <div className="flex flex-col">
               <div className="bg-blue-50 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-6 group-hover:bg-blue-100 transition">
-                <item.icon className="h-6 w-6 text-[#d17432]" />
+                <item.icon className="h-6 w-6 text-[#c3590e]" />
               </div>
               <h3 className="text-lg font-bold mb-3">{item.title}</h3>
               <p className="text-[13px] font-[500]">{item.description}</p>
               <a
                 href="#"
-                className="mt-6 text-[#d17432] font-medium flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs"
+                className="mt-6 text-[#c3590e] font-medium flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs"
               >
                 Learn more
                 <svg

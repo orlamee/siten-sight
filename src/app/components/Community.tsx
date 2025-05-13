@@ -61,7 +61,7 @@ export default function Community() {
             >
               <div className="flex items-start gap-4">
                 <div className="bg-blue-50 p-3 rounded-full">
-                  <item.icon className="h-6 w-6 text-[#d17432]" />
+                  <item.icon className="h-6 w-6 text-[#c3590e]" />
                 </div>
                 <div>
                   <h4 className="text-lg font-bold">{item.title}</h4>

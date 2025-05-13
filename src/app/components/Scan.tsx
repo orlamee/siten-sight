@@ -61,7 +61,7 @@ export default function ScanFeature() {
               <div className="grid sm:grid-cols-2 gap-6 mb-12">
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-50 p-3 rounded-full flex-shrink-0">
-                    <CameraIcon className="h-6 w-6 text-[#d17432]" />
+                    <CameraIcon className="h-6 w-6 text-[#c3590e]" />
                   </div>
                   <div>
                     <h3 className="font-bold mb-1.5">Scan Tools</h3>
@@ -73,7 +73,7 @@ export default function ScanFeature() {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-50 p-3 rounded-full flex-shrink-0">
-                    <BuildingLibraryIcon className="h-6 w-6 text-[#d17432]" />
+                    <BuildingLibraryIcon className="h-6 w-6 text-[#c3590e]" />
                   </div>
                   <div>
                     <h3 className="font-bold mb-1.5">Scan Buildings</h3>
@@ -86,7 +86,7 @@ export default function ScanFeature() {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-50 p-3 rounded-full flex-shrink-0">
-                    <CubeIcon className="h-6 w-6 text-[#d17432]" />
+                    <CubeIcon className="h-6 w-6 text-[#c3590e]" />
                   </div>
                   <div>
                     <h3 className="font-bold mb-1.5">Scan Materials</h3>
@@ -99,7 +99,7 @@ export default function ScanFeature() {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-50 p-3 rounded-full flex-shrink-0">
-                    <BoltIcon className="h-6 w-6 text-[#d17432]" />
+                    <BoltIcon className="h-6 w-6 text-[#c3590e]" />
                   </div>
                   <div>
                     <h3 className="font-bold mb-1.5">Instant Insights</h3>
@@ -112,7 +112,7 @@ export default function ScanFeature() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-6 py-3.5 bg-[#d17432] text-white rounded-full font-medium hover:bg-[#6b615b] transition-all shadow-md hover:shadow-lg flex items-center justify-center">
+                <button className="px-6 py-3.5 bg-[#c3590e] text-white rounded-full font-medium hover:bg-[#6b615b] transition-all shadow-md hover:shadow-lg flex items-center justify-center">
                   <QrCodeIcon className="h-5 w-5 mr-2" />
                   Download SiteNsight App
                 </button>
