@@ -45,7 +45,7 @@ export default function Community() {
           />
         </div>
         <div className="w-full md:w-2/3">
-          <div className="mb-4 flex justify-center">
+          <div className="mb-4 flex lg:justify-start justify-center">
             <span className="text-sm inline-block bg-yellow-100 text-yellow-800 px-4 py-1 rounded-full font-semibold">
               🚧 Coming Soon
             </span>
