@@ -61,7 +61,7 @@ export default function Hero() {
 
   return (
     <div>
-      <div className="container mx-auto px-6 md:px-10 mt-6">
+      <div className="container mx-auto px-6 md:px-10 mt-10">
         <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center">
           {/* Text Content */}
           <div className="flex-1 basis-full md:basis-1/2 text-center md:text-left">
@@ -70,8 +70,9 @@ export default function Hero() {
               alt="Business Thrve"
               width={150}
               height={50}
-              className="ml-[-15px] mb-4"
+              className="mx-auto lg:mx-0 mb-4 lg:ml-[-15px]"
             />
+
             <h3 className="capitalize text-2xl md:text-[35px] leading-[30px] md:leading-[50px] font-bold mb-4 md:mb-6">
               Where Curious Minds{" "}
               <span className="text-[#c3590e]">Learn, Build, and Connect</span>
