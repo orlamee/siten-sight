@@ -65,19 +65,11 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center">
           {/* Text Content */}
           <div className="flex-1 basis-full md:basis-1/2 text-center md:text-left">
-            <Image
-              src="/images/ss.png"
-              alt="Business Thrve"
-              width={150}
-              height={50}
-              className="mx-auto lg:mx-0 mb-4 lg:ml-[-15px]"
-            />
-
             <h3 className="capitalize text-2xl md:text-[35px] leading-[30px] md:leading-[50px] font-bold mb-4 md:mb-6">
               Where Curious Minds{" "}
               <span className="text-[#c3590e]">Learn, Build, and Connect</span>
             </h3>
-            <p className="text-[12px] md:text-[12px] font-[500] leading-[24px] md:leading-[30px]">
+            <p className="text-sm font-[500] md:text-[14px]">
               Built for students, professionals, and DIY users in construction.
               Learn real-world skills, explore interactive lessons, and connect
               with a vibrant community anytime, anywhere.
