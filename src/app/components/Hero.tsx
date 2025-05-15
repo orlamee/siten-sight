@@ -70,7 +70,7 @@ export default function Hero() {
               <span className="text-[#c3590e]">Learn, Build, and Connect</span>
             </h3>
             <p className="text-sm font-[500] md:text-[14px]">
-              Built for students, professionals, and DIY users in construction.
+              Built for students, professionals, and DIY enthusiasts in construction.
               Learn real-world skills, explore interactive lessons, and connect
               with a vibrant community anytime, anywhere.
             </p>
