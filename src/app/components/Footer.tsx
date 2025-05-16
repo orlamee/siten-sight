@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaArrowUp } from 'react-icons/fa6';
 import ThemeToggle from './ThemeToggle';
 
@@ -49,11 +49,18 @@ export default function Footer() {
                 <FaTwitter size={16} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/sitensight/?igsh=MTZ5bGJobGl4cWJ0MQ%3D%3D"
                 aria-label="Instagram"
                 className="bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 rounded-full transition"
               >
                 <FaInstagram size={16} />
+              </a>
+              <a
+                href=""
+                aria-label="Instagram"
+                className="bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 rounded-full transition"
+              >
+                <FaLinkedinIn size={16} />
               </a>
             </div>
           </div>
