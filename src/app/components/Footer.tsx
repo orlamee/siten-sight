@@ -49,14 +49,14 @@ export default function Footer() {
                 <FaTwitter size={16} />
               </a>
               <a
-                href="https://www.instagram.com/sitensight/?igsh=MTZ5bGJobGl4cWJ0MQ%3D%3D"
+                href="https://www.instagram.com/sitensight_?igsh=MXI0dzRiM2ZyZzdzeA=="
                 aria-label="Instagram"
                 className="bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 rounded-full transition"
               >
                 <FaInstagram size={16} />
               </a>
               <a
-                href=""
+                href="https://www.linkedin.com/company/sitensight/"
                 aria-label="Instagram"
                 className="bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 rounded-full transition"
               >
