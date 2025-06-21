@@ -1,13 +1,35 @@
 'use client';
 
 import Image from 'next/image';
+import { useState } from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaArrowUp } from 'react-icons/fa6';
 import ThemeToggle from './ThemeToggle';
+import PrivacyPolicyModal from './PrivacyPolicyModal';
+import SupportModal from './SupportModal';
 
 export default function Footer() {
+  const [isPrivacyPolicyOpen, setIsPrivacyPolicyOpen] = useState(false);
+  const [isSupportOpen, setIsSupportOpen] = useState(false);
+  
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const openPrivacyPolicy = () => {
+    setIsPrivacyPolicyOpen(true);
+  };
+
+  const closePrivacyPolicy = () => {
+    setIsPrivacyPolicyOpen(false);
+  };
+
+  const openSupport = () => {
+    setIsSupportOpen(true);
+  };
+
+  const closeSupport = () => {
+    setIsSupportOpen(false);
   };
 
   return (
@@ -27,12 +49,32 @@ export default function Footer() {
             space.
           </p>
 
-          <hr className="border-[#c3590e] my-6" />
-
-          <div className="flex justify-between items-center mt-10 flex-col md:flex-row gap-4">
+          <hr className="border-[#c3590e] my-6" />          <div className="flex justify-between items-center mt-10 flex-col md:flex-row gap-4">
             <p className="text-xs">
               &copy; {new Date().getFullYear()} SiteNsight. All rights reserved.
             </p>
+            
+            {/* Footer Links */}
+            <div className="flex gap-4">
+              {/* Privacy Policy Link */}
+              <button
+                onClick={openPrivacyPolicy}
+                className="text-xs text-[#c3590e] hover:text-[#bd5f23] hover:underline transition cursor-pointer"
+                aria-label="View Privacy Policy"
+              >
+                Privacy Policy
+              </button>
+              
+              {/* Support Link */}
+              <button
+                onClick={openSupport}
+                className="text-xs text-[#c3590e] hover:text-[#bd5f23] hover:underline transition cursor-pointer"
+                aria-label="View Support Information"
+              >
+                Support
+              </button>
+            </div>
+            
             <div className="flex gap-4 text-white">
               <a
                 href="#"
@@ -57,7 +99,7 @@ export default function Footer() {
               </a>
               <a
                 href="https://www.linkedin.com/company/sitensight/"
-                aria-label="Instagram"
+                aria-label="LinkedIn"
                 className="bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 rounded-full transition"
               >
                 <FaLinkedinIn size={16} />
@@ -66,6 +108,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      
+      {/* Privacy Policy Modal */}
+      <PrivacyPolicyModal isOpen={isPrivacyPolicyOpen} onClose={closePrivacyPolicy} />
+      
+      {/* Support Modal */}
+      <SupportModal isOpen={isSupportOpen} onClose={closeSupport} />
       
       {/* Fixed Theme Toggle button on the left */}
       <div className="fixed bottom-6 left-6 z-50">
