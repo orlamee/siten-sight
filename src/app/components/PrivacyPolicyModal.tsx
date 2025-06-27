@@ -2,7 +2,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { FaEnvelope, FaGlobe, FaTimes } from "react-icons/fa";
+import { FaGlobe, FaTimes, FaMapMarkerAlt } from "react-icons/fa";
 
 interface PrivacyPolicyModalProps {
   isOpen: boolean;
@@ -40,178 +40,155 @@ const PrivacyPolicyModal = ({ isOpen, onClose }: PrivacyPolicyModalProps) => {
             <h1 className="text-3xl font-bold text-[#c3590e] mb-4">
               Privacy Policy
             </h1>
-            <p className="text-sm text-white">Effective Date: June 19, 2025</p>
+            <p className="text-sm text-white">Effective Date: 06/20/2025</p>
+            <p className="text-sm text-white">Last Updated: 06/20/2025</p>
           </div>
 
           <div className="space-y-8">
             <section className="space-y-4">
               <p className="text-sm leading-relaxed text-white">
-                Sitensight ("we", "our", or "us") values your privacy. This
-                Privacy Policy explains how we collect, use, and protect your
-                information when you visit our website
-                https://www.sitensight.com (the "Site").
+                SiteNsight ("we," "us," or "our") respects your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the SiteNsight mobile application and website (collectively, the "App"). Please read this policy carefully to understand our views and practices regarding your personal data.
               </p>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-[#c3590e] border-b border-gray-200 dark:border-gray-700 pb-2">
-                Information We Collect
+                1. Information We Collect
               </h2>
               <p className="text-white text-sm">
-                We may collect the following types of personal information:
+                We may collect the following types of data:
               </p>
-              <ul className="space-y-3 pl-5 list-disc marker:text-[#c3590e] text-xs text-white">
-                <li className="pl-2">
-                  <strong className="text-white">Contact Information:</strong>{" "}
-                  such as your name and email address when you submit forms or
-                  contact us.
-                </li>
-                <li className="pl-2">
-                  <strong className="text-white">Usage Data:</strong> such as IP
-                  address, browser type, device info, and pages visited via
-                  analytics tools (e.g., Google Analytics).
-                </li>
-                <li className="pl-2">
-                  <strong className="text-white">Cookies:</strong> small data
-                  files used to enhance your experience and understand usage
-                  patterns.
-                </li>
+              
+              <h3 className="text-lg font-semibold text-[#c3590e] mt-4">a. Personal Information</h3>
+              <ul className="space-y-2 pl-5 list-disc marker:text-[#c3590e] text-sm text-white">
+                <li className="pl-2">Name</li>
+                <li className="pl-2">Email address</li>
+                <li className="pl-2">Phone number</li>
+                <li className="pl-2">Company name (optional)</li>
+              </ul>
+
+              <h3 className="text-lg font-semibold text-[#c3590e] mt-4">b. Non-Personal Information</h3>
+              <ul className="space-y-2 pl-5 list-disc marker:text-[#c3590e] text-sm text-white">
+                <li className="pl-2">App usage statistics</li>
+                <li className="pl-2">Device information (e.g., operating system, model)</li>
+                <li className="pl-2">Location data (only if you allow access)</li>
+                <li className="pl-2">Cookies and analytics data (if using web version)</li>
               </ul>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-[#c3590e] border-b border-gray-200 dark:border-gray-700 pb-2">
-                How We Use Your Information
+                2. How We Use Your Information
               </h2>
               <p className="text-white text-sm">
-                We use the information we collect to:
+                We use your information to:
               </p>
-              <ul className="space-y-3 pl-5 list-disc marker:text-[#c3590e] text-xs text-white">
-                <li className="pl-2">Respond to your inquiries or requests</li>
-                <li className="pl-2">
-                  Send updates, newsletters, or promotional materials (if you
-                  opt in)
-                </li>
-                <li className="pl-2">Improve our website and services</li>
-                <li className="pl-2">
-                  Analyze website traffic and usage patterns
-                </li>
+              <ul className="space-y-2 pl-5 list-disc marker:text-[#c3590e] text-sm text-white">
+                <li className="pl-2">Operate and maintain the SiteNsight platform</li>
+                <li className="pl-2">Provide user support and respond to inquiries</li>
+                <li className="pl-2">Improve app functionality and user experience</li>
+                <li className="pl-2">Send updates, alerts, or promotional materials (you can opt out)</li>
+                <li className="pl-2">Enforce terms, prevent fraud, and comply with legal obligations</li>
               </ul>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-[#c3590e] border-b border-gray-200 dark:border-gray-700 pb-2">
-                Sharing Your Information
+                3. Sharing Your Information
               </h2>
               <p className="text-white text-sm">
-                We do not sell or rent your personal information. We may share
-                it with:
+                We do not sell or rent your personal information. We may share your data with:
               </p>
-              <ul className="space-y-3 pl-5 list-disc marker:text-[#c3590e] text-xs text-white">
-                <li className="pl-2">
-                  <strong className="text-white">Service providers:</strong>{" "}
-                  like web hosting platforms or analytics providers
-                </li>
-                <li className="pl-2">
-                  <strong className="text-white">Legal authorities:</strong> if
-                  required to comply with applicable laws, regulations, or legal
-                  processes
-                </li>
+              <ul className="space-y-2 pl-5 list-disc marker:text-[#c3590e] text-sm text-white">
+                <li className="pl-2">Service providers and partners who support app functionality (e.g., hosting, analytics)</li>
+                <li className="pl-2">Law enforcement or government agencies when required by law</li>
+                <li className="pl-2">In the event of a business transfer or merger</li>
               </ul>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-[#c3590e] border-b border-gray-200 dark:border-gray-700 pb-2">
-                Cookies and Tracking Technologies
+                4. Data Retention
               </h2>
-              <p className="text-white text-sm">We may use cookies to:</p>
-              <ul className="space-y-3 pl-5 list-disc marker:text-[#c3590e] text-xs text-white">
-                <li className="pl-2">Remember your preferences</li>
-                <li className="pl-2">
-                  Analyze traffic to improve user experience
-                </li>
-              </ul>
               <p className="text-white text-sm">
-                You can disable cookies via your browser settings, but doing so
-                may affect the functionality of the Site.
+                We retain your information as long as your account is active or as needed to provide services. You may request deletion at any time by contacting us.
               </p>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-[#c3590e] border-b border-gray-200 dark:border-gray-700 pb-2">
-                Data Security
+                5. Security
               </h2>
               <p className="text-white text-sm">
-                We implement industry-standard security measures to protect your
-                data from unauthorized access, disclosure, or misuse. However,
-                no method of transmission over the internet is 100% secure. We
-                cannot guarantee absolute security.
+                We use industry-standard safeguards to protect your data. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.
               </p>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-[#c3590e] border-b border-gray-200 dark:border-gray-700 pb-2">
-                Your Rights
+                6. Your Rights and Choices
               </h2>
-              <p className="text-white text-sm">
-                Depending on your location, you may have rights to:
-              </p>
-              <ul className="space-y-3 pl-5 list-disc marker:text-[#c3590e] text-xs text-white">
-                <li className="pl-2">
-                  Access the personal information we hold about you
-                </li>
-                <li className="pl-2">Request corrections or deletion</li>
+              <p className="text-white text-sm">You may:</p>
+              <ul className="space-y-2 pl-5 list-disc marker:text-[#c3590e] text-sm text-white">
+                <li className="pl-2">Access or update your personal information</li>
+                <li className="pl-2">Request deletion of your account</li>
                 <li className="pl-2">Opt out of marketing communications</li>
+                <li className="pl-2">Request a copy of your data</li>
               </ul>
-              <p className="text-white">
-                To exercise these rights, contact us at support@sitensight.com.
+              <p className="text-white text-sm mt-3">
+                Please contact us at [Insert your support email] for any of these requests.
               </p>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-[#c3590e] border-b border-gray-200 dark:border-gray-700 pb-2">
-                Third-Party Links
+                7. Children's Privacy
               </h2>
               <p className="text-white text-sm">
-                Our website may contain links to third-party websites. We are
-                not responsible for their privacy practices. Please review their
-                policies before sharing any personal data.
+                SiteNsight is not intended for children under the age of 13. We do not knowingly collect personal information from children.
               </p>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-[#c3590e] border-b border-gray-200 dark:border-gray-700 pb-2">
-                Updates to This Policy
+                8. Third-Party Links
               </h2>
               <p className="text-white text-sm">
-                We may update this Privacy Policy periodically. The revised
-                version will be posted on this page with a new effective date.
+                Our app may contain links to external websites or services not controlled by us. We are not responsible for their privacy practices.
               </p>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-[#c3590e] border-b border-gray-200 dark:border-gray-700 pb-2">
-                Contact Us
+                9. Changes to This Privacy Policy
               </h2>
               <p className="text-white text-sm">
-                If you have questions about this policy or your data, please
-                contact us:
+                We may update this policy from time to time. If we make significant changes, we will notify you through the app or via email.
               </p>
-              <div className="flex flex-col space-y-3 mt-3 text-sm">
-                <a
-                  href="mailto:support@sitensight.com"
-                  className="flex items-center text-[#c3590e] hover:underline transition-colors"
-                >
-                  <FaEnvelope className="mr-3" />
-                  support@sitensight.com
-                </a>
-                <a
-                  href="https://www.sitensight.com"
-                  className="flex items-center text-[#c3590e] hover:underline transition-colors"
-                >
-                  <FaGlobe className="mr-3" />
-                  https://www.sitensight.com
-                </a>
+            </section>
+
+            <section className="space-y-4">
+              <h2 className="text-2xl font-semibold text-[#c3590e] border-b border-gray-200 dark:border-gray-700 pb-2">
+                10. Contact Us
+              </h2>
+              <p className="text-white text-sm">
+                For any questions or concerns about this Privacy Policy, please contact us:
+              </p>
+              <div className="mt-4 text-sm text-white">
+                <p className="font-semibold text-[#c3590e] mb-2">SiteNsight</p>
+                <div className="flex flex-col space-y-2">
+                  <a
+                    href="https://www.sitensight.com"
+                    className="flex items-center text-[#c3590e] hover:underline transition-colors"
+                  >
+                    <FaGlobe className="mr-3" />
+                    https://www.sitensight.com
+                  </a>
+                  <div className="flex items-center text-white">
+                    <FaMapMarkerAlt className="mr-3 text-[#c3590e]" />
+                    Maryland, United States
+                  </div>
+                </div>
               </div>
             </section>
           </div>
