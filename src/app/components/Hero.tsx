@@ -1,64 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 
 export default function Hero() {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [formData, setFormData] = useState<{ name: string; email: string }>({
-    name: "",
-    email: "",
-  });
-  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsLoading(true);
-    try {
-      const response = await fetch("https://sheetdb.io/api/v1/u3wf8lpw273lk", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          data: [
-            {
-              name: formData.name,
-              email: formData.email,
-              date: new Date().toISOString(),
-            },
-          ],
-        }),
-      });
-
-      if (response.ok) {
-        setIsSubmitted(true);
-        setTimeout(() => {
-          setIsSubmitted(false);
-          setIsModalOpen(false);
-          setFormData({ name: "", email: "" });
-        }, 3000);
-      } else {
-        throw new Error("Failed to submit");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("There was an error submitting your form. Please try again.");
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   return (
     <div>
       <div className="container mx-auto px-6 md:px-10 mt-10">
@@ -75,12 +19,14 @@ export default function Hero() {
               with a vibrant community anytime, anywhere.
             </p>
             <div className="mt-6 md:mt-10">
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="bg-[#c3590e] text-white px-6 py-4 rounded-[36px] text-sm font-medium hover:bg-[#6b615b] transition-all cursor-pointer"
+              <a
+                href="https://apps.apple.com/us/app/sitensight/id6746155576"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#c3590e] text-white px-6 py-4 rounded-[36px] text-sm font-medium hover:bg-[#6b615b] transition-all cursor-pointer"
               >
-                Join Waitlist
-              </button>
+                Try Now
+              </a>
             </div>
           </div>
 
@@ -99,112 +45,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-lg p-6 max-w-md w-full">
-            {!isSubmitted ? (
-              <>
-                <h3 className="text-xl font-bold text-black mb-4">
-                  Get Early Access
-                </h3>
-                <p className="mb-4 text-xs text-black">
-                  Enter your details to join the waitlist.
-                </p>
-                <form onSubmit={handleSubmit}>
-                  <div className="mb-4">
-                    <label
-                      htmlFor="name"
-                      className="block mb-2 text-xs font-medium text-black"
-                    >
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md text-black"
-                      required
-                    />
-                  </div>
-                  <div className="mb-6">
-                    <label
-                      htmlFor="email"
-                      className="block mb-2 text-xs font-medium text-black"
-                    >
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md text-black"
-                      required
-                    />
-                  </div>
-                  <div className="flex justify-end gap-3">
-                    <button
-                      type="button"
-                      onClick={() => setIsModalOpen(false)}
-                      className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-200 rounded-[36px] hover:bg-gray-300"
-                      disabled={isLoading}
-                    >
-                      Cancel
-                    </button>
-                    <button
-                      type="submit"
-                      className="px-4 py-2 text-sm font-medium text-white bg-[#c3590e] rounded-[36px] hover:bg-[#6b615b] flex items-center justify-center"
-                      disabled={isLoading}
-                    >
-                      {isLoading ? (
-                        <>
-                          <svg
-                            className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                          >
-                            <circle
-                              className="opacity-25"
-                              cx="12"
-                              cy="12"
-                              r="10"
-                              stroke="currentColor"
-                              strokeWidth="4"
-                            ></circle>
-                            <path
-                              className="opacity-75"
-                              fill="currentColor"
-                              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                            ></path>
-                          </svg>
-                          Submitting...
-                        </>
-                      ) : (
-                        "Submit"
-                      )}
-                    </button>
-                  </div>
-                </form>
-              </>
-            ) : (
-              <div className="text-center py-4">
-                <h3 className="text-xl font-bold mb-2 text-[#c3590e]">
-                  Thank You!
-                </h3>
-                <p>
-                  We've received your information. You'll hear from us soon!
-                </p>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
     </div>
   );
 }

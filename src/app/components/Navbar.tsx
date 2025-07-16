@@ -15,7 +15,9 @@ export default function Navbar() {
         </Link>
         <div>
           <a
-            href="#"
+            href="https://apps.apple.com/us/app/sitensight/id6746155576"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#c3590e] text-white px-6 py-4 rounded-[36px] text-sm font-medium hover:bg-[#6b615b] transition-all"
           >
             Download App
