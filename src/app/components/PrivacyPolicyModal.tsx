@@ -136,7 +136,7 @@ const PrivacyPolicyModal = ({ isOpen, onClose }: PrivacyPolicyModalProps) => {
                 <li className="pl-2">Request a copy of your data</li>
               </ul>
               <p className="text-white text-sm mt-3">
-                Please contact us at [Insert your support email] for any of these requests.
+                Please contact us at support@sitensight.com for any of these requests.
               </p>
             </section>
 
