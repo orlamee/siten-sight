@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaArrowUp } from 'react-icons/fa6';
@@ -73,6 +74,15 @@ export default function Footer() {
               >
                 Support
               </button>
+              
+              {/* Delete Account Link */}
+              <Link
+                href="/delete-account"
+                className="text-xs text-[#c3590e] hover:text-[#bd5f23] hover:underline transition cursor-pointer"
+                aria-label="Delete Account Instructions"
+              >
+                Delete Account
+              </Link>
             </div>
             
             <div className="flex gap-4 text-white">
