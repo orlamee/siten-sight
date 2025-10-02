@@ -18,15 +18,40 @@ export default function Hero() {
               Learn real-world skills, explore interactive lessons, and connect
               with a vibrant community anytime, anywhere.
             </p>
+            <p className="text-sm font-[600] text-[#c3590e] mt-3">
+              Available on iOS & Android
+            </p>
             <div className="mt-6 md:mt-10">
-              <a
-                href="https://apps.apple.com/us/app/sitensight/id6746155576"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#c3590e] text-white px-6 py-4 rounded-[36px] text-sm font-medium hover:bg-[#6b615b] transition-all cursor-pointer"
-              >
-                Try Now
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4 items-center md:items-start">
+                <a
+                  href="https://apps.apple.com/us/app/sitensight/id6746155576"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  <Image
+                    src="/images/app-store-badge.svg"
+                    alt="Download on the App Store"
+                    width={135}
+                    height={40}
+                    className="h-10 w-auto"
+                  />
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  <Image
+                    src="/images/google-play-badge.svg"
+                    alt="Get it on Google Play"
+                    width={135}
+                    height={40}
+                    className="h-10 w-auto"
+                  />
+                </a>
+              </div>
             </div>
           </div>
 
