@@ -38,7 +38,7 @@ export default function Hero() {
                   />
                 </a>
                 <a
-                  href="#"
+                  href="https://play.google.com/store/apps/details?id=com.sitensight"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:opacity-80 transition-opacity"
